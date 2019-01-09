@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="types">
+        <item>请选择架空输电线路验电系统类型     </item>
+        <item>±1100kV直流架空输电线路验电系统</item>
+        <item>±800kV直流架空输电线路验电系统 </item>
+        <item>±660kV直流架空输电线路验电系统</item>
+        <item>±500kV直流架空输电线路验电系统</item>
+        <item>1000kV交流架空输电线路验电系统</item>
+        <item>750kV交流架空输电线路验电系统</item>
+        <item>500kV交流架空输电线路验电系统</item>
+    </string-array>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hanxin.electrictool"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/start_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hanxin.electrictool.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- //landscape为固定横屏,portrait为固定竖屏 -->
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name=".ChatViewActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <!--
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+
+        <activity
+            android:name=".IndexActivity0"
+            android:label="@string/title_activity_index" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.IndexActivity"
+            android:label="@string/title_activity_index" >
+        </activity>
+        <activity
+            android:name=".CheckElectricActivity"
+            android:label="@string/title_activity_check_electric" >
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".HistoryInfoActivity"
+            android:label="@string/title_activity_history_info" >
+        </activity>
+        <activity
+            android:name=".CheckInfoActivity"
+            android:label="@string/title_activity_check_info" >
+        </activity>
+        <activity
+            android:name=".ConfigActivity"
+            android:label="@string/title_activity_config" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.AdminAccountActivity"
+            android:label="@string/title_activity_admin_setting" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.CheckInfoActivity"
+            android:label="@string/title_activity_check_info1" >
+        </activity>
+        <activity
+            android:name=".CommonAccountActivity"
+            android:label="@string/title_activity_common_account" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.SuperAccountActivity"
+            android:label="@string/title_activity_super_account" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.AddSuperAccountActivity"
+            android:label="@string/title_activity_add_super_account" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.AdminSettingsActivity"
+            android:label="@string/title_activity_admin_settings" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.SetupPhoneActivity"
+            android:label="@string/title_activity_setup_phone" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.AccountManagentActivity"
+            android:label="@string/title_activity_account_managent" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.UnlockDevicesActivity"
+            android:label="@string/title_activity_unlock_devices" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.TestElectricActivity"
+            android:label="@string/title_activity_test_electric" >
+        </activity>
+        <activity
+            android:name="com.hanxin.electrictool.activity.ResultInfosActivity"
+            android:label="@string/title_activity_result_infos" >
+        </activity>
+    </application>
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许应用程序改变网络状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 允许应用程序改变WIFI连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+</manifest>

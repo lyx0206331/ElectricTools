@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">验电系统</string>
+    <string name="hello_world">返回</string>
+    <string name="title">±1100kV直流架空输电线路验电系统</string>
+    <string name="title2">XXkVX流</string>
+    <string name="time">当前时间：</string>
+    <string name="nowTime">获取中---</string>
+    <string name="deviceType">设备型号:</string>
+    <string name="user_name">用 户 名:</string>
+    <string name="deviceId">设 备 ID</string>
+    <string name="unknow">未知</string>
+    <string name="exit">退  出</string>
+    <string name="password">登录密码:</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="login">登   录</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_index">验电</string>
+    <string name="title_activity_check_electric">CheckElectricActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_history_info">HistoryInfoActivity</string>
+    <string name="title_activity_check_info">CheckInfoActivity</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="title_activity_config">ConfigActivity</string>
+    <string name="notice">使用须知:本系统仅适用于xx直流/交流架空输电线路</string>
+    <string name="notice2">已阅读并知晓</string>
+    <string name="company_name">湖北天门信正科技有限公司</string>
+    <string name="company_support">湖北天门信正科技有限公司\n电话：13329709436</string>
+    <string name="company_phone">技术支持电话：13329709436</string>
+    <string name="version_info">版本信息</string>
+    <string name="title_activity_admin_setting">AdminSettingActivity</string>
+    <string name="title_activity_check_info1">CheckInfo1Activity</string>
+    <string name="title_activity_common_account">CommonAccountActivity</string>
+    <string name="title_activity_super_account">SuperAccountActivity</string>
+    <string name="title_activity_add_super_account">AddSuperAccountActivity</string>
+    <string name="title_activity_admin_settings">AdminSettingsActivity</string>
+    <string name="title_activity_setup_phone">SetupPhoneActivity</string>
+    <string name="title_activity_account_managent">AccountManagentActivity</string>
+    <string name="title_activity_unlock_devices">UnlockDevicesActivity</string>
+    <string name="title_activity_test_electric">TestElectricActivity</string>
+    <string name="title_activity_result_infos">ResultInfosActivity</string>
+
+</resources>

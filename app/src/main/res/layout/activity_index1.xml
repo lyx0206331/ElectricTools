@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg" >
+		<LinearLayout 
+	    android:id="@+id/head"
+	    android:layout_marginTop="5dp"
+	    android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/back" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            /> 
+        <Button
+            android:id="@+id/exit"
+            style="@style/ExitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/exit"
+            android:text="@string/exit" />
+	</LinearLayout>
+
+    
+     <LinearLayout
+        android:id="@+id/tx4"
+        android:layout_below="@id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/showDate"
+            style="@style/HeadText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/time" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/time_line" />
+
+        <TextView
+            android:id="@+id/showTime"
+            style="@style/HeadText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/nowTime" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:scaleType="center"
+        android:src="@drawable/logo" />
+    
+    
+        <TextView
+        android:id="@+id/tx2"
+        style="@style/HeadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="@string/title" />
+        
+        <TextView
+        android:id="@+id/tx3"
+        style="@style/HeadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:singleLine="true" 
+        android:textColor="#ff0000"       
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="设备已过检定期" 
+        android:visibility="invisible"
+        />
+
+<!-- android:textColor=“00fff”
+android:visibility="invisible"
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="@string/deviceId" /> 
+        
+        android:background="@drawable/null"
+        -->
+        
+         <!--   <LinearLayout
+        android:id="@+id/tx5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:weightSum="3.0"
+        android:orientation="vertical" > 
+
+        <Button
+            android:id="@+id/checkElectric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="#98D0DE"
+            android:textSize="20sp"
+            android:text="验 电" />
+
+        <Button
+            android:id="@+id/showResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:background="#98D0DE"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="查 看" /> 
+    </LinearLayout>  -->
+          <TextView
+            android:id="@+id/last1"
+            android:layout_below="@+id/history1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/company_name"
+            style="@style/CompanyText" />
+        <Button
+        android:id="@+id/checkElectric1" 
+        android:background="@drawable/check_electric"       
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="验     电" />
+        
+        <TextView
+        android:id="@+id/recentCheck" 
+        android:background="@drawable/check_electric"        
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkElectric1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="产品状态" />
+        
+        
+        <Button
+        android:id="@+id/history1"  
+        android:background="@drawable/check_electric"       
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recentCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="历史记录" />
+
+  
+
+</RelativeLayout>
+
