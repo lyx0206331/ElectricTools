@@ -27,7 +27,7 @@ public class OptionsAdapter extends BaseAdapter{
 	 * 自定义构造方法
 	 * @param activity
 	 * @param handler
-	 * @param list
+	 * @param listItems
 	 */
 	public OptionsAdapter(Activity activity,Handler handler,List<Map<String, Object>> listItems){
 		this.activity = activity;
